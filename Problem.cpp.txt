@@ -1,0 +1,15 @@
+ Key Ideas:
+On each day, you can solve problems in strictly increasing difficulty order.
+
+Consecutive problems on the same day must have a vi rating difference of at least K.
+
+You want to minimize the number of days — this means maximizing how many problems you can solve in one day (i.e., finding longest possible valid subsequences), and repeating this.
+
+The approach:
+
+Repeatedly find the longest valid subsequence (difficulty increasing + vi difference ≥ K).
+
+Remove those problems from the list.
+
+Repeat the above steps until all problems are solved.
+
